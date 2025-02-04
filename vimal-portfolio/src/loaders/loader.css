@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* Define the typing animation */
+@keyframes typing {
+    0% {
+      width: 0; /* Start with no width */
+    }
+    100% {
+      width: 100%; /* End with full width */
+    }
+  }
+  
+  /* Loader container */
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  }
+  
+  /* Signature text style */
+  .signature-text {
+    font-family: 'Dancing Script', cursive; /* Use a script font to simulate a signature */
+    font-size: 3rem;
+    color: white;
+    overflow: hidden; /* Hide text until animation happens */
+    border-right: 2px solid white; /* Create a cursor effect */
+    white-space: nowrap; /* Ensure text stays on one line */
+    animation: typing 3s steps(30) 1s 1 normal both; /* Simulate the typing effect */
+  }
+  
+  /* Portfolio content (after loader) */
+  .portfolio-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
