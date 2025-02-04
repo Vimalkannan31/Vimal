@@ -1,11 +1,14 @@
 import express from "express";
 import router from "./routes/portfolio.route.js";
+import cors from "cors"; 
 import ConnectDB from "./config/db.js";
 
 const app = express();
 const port = 2003;
 
-ConnectDB()
+ConnectDB();
+
+app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({extended : true}));
